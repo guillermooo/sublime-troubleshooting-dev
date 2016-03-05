@@ -62,9 +62,6 @@ def setup():
     with cd('..'):
         # TODO: Change this when we move to GitHub.
         call(['git', 'clone', 'https://bitbucket.org/guillermooo/sublime-troubleshooting', 'src'])
-        with cd('src'):
-            call(['git', 'fetch'])
-            call(['git', 'checkout', 'restructure'])
 
     rm_folder_link(os.path.join(SCRIPT_DIR, 'src'))
     link_folder(os.path.join(SCRIPT_DIR, 'src'), os.path.join(SCRIPT_DIR, '..', 'src'))
