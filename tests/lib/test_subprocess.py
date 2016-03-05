@@ -18,4 +18,11 @@ class Test_check_output(unittest.TestCase):
         expected = 'Darwin'
         actual = check_output(['uname'], universal_newlines=True)
         self.assertEqual(expected, actual.strip())
+
+    @unittest.skipIf(sys.platform != 'linux', 'because only for Linux')
+    def testCanReadOutputInLinux(self):
+        expected = 'Linux'
+        actual = check_output(['uname'], universal_newlines=True).strip()
+        self.assertEqual(expected, actual)
+        self.assertEqual(expected, actual.strip())
      
