@@ -60,6 +60,7 @@ def undevelop():
 @task
 def setup():
     with cd('..'):
+        # TODO: Change this when we move to GitHub.
         call(['git', 'clone', 'https://bitbucket.org/guillermooo/sublime-troubleshooting', 'src'])
         with cd('src'):
             call(['git', 'fetch'])
