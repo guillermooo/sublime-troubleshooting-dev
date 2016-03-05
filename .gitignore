@@ -29,6 +29,8 @@ __pycache__
 # project
 
 venv/
+# we link to this directory instead
+src/
 
 # pybuilder
 
