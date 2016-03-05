@@ -12,7 +12,7 @@ and generate complete error reports.
 # Using PowerShell on Windows
 PS> mkdir sublime-troubleshooting
 PS> cd sublime-troubleshooting
-PS> git clone https://github.com/guillermooo/sublime-troubleshooting dev
+PS> git clone https://github.com/guillermooo/sublime-troubleshooting-dev dev
 PS> cd dev
 PS> python -m venv venv
 PS> ./venv/Scripts/activate.ps1
