@@ -60,7 +60,7 @@ def undevelop():
 @task
 def setup():
     with cd('..'):
-        call(['git', 'clone', 'https://bitbucket.org/guillermooo/ts-tests', 'src'])
+        call(['git', 'clone', 'https://bitbucket.org/guillermooo/sublime-troubleshooting', 'src'])
         with cd('src'):
             call(['git', 'fetch'])
             call(['git', 'checkout', 'restructure'])
