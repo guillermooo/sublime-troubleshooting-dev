@@ -10,15 +10,20 @@ and generate complete error reports.
 
 ```powershell
 # Using PowerShell on Windows
+PS> mkdir sublime-troubleshooting
+PS> cd sublime-troubleshooting
+PS> git clone https://github.com/guillermooo/sublime-troubleshooting dev
+PS> cd dev
 PS> python -m venv venv
 PS> ./venv/Scripts/activate.ps1
 PS> (venv) pip install -r requirements.txt
+PS> pyb_ setup
 ```
 
-Run `pyb_ develop` once
-to have symlinks (Linux, OS X)
+The last step will clone additional respositories,
+and create symlinks (Linux, OS X)
 or directory junctions (Windows)
-set up automatically for you in Data/Packages.
+in Data/Packages.
 
  **On Windows**,
  note that you'll have to restart Sublime Text

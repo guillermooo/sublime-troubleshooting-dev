@@ -57,7 +57,22 @@ def undevelop():
         rm_folder_link('Troubleshootingtests')
 
 
+@task
+def setup():
+    with cd('..'):
+        call(['git', 'clone', 'https://bitbucket.org/guillermooo/ts-tests', 'src'])
+        with cd('src'):
+            call(['git', 'fetch'])
+            call(['git', 'checkout', 'restructure'])
+
+    rm_folder_link(os.path.join(SCRIPT_DIR, 'src'))
+    link_folder(os.path.join(SCRIPT_DIR, 'src'), os.path.join(SCRIPT_DIR, '..', 'src'))
+
+    develop()
+
+
 default_task = "analyze"
+
 
 # Utils ///////////////////////////////////////////////////////////////////////
 
