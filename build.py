@@ -61,7 +61,7 @@ def undevelop():
 def setup():
     with cd('..'):
         # TODO: Change this when we move to GitHub.
-        call(['git', 'clone', 'https://bitbucket.org/guillermooo/sublime-troubleshooting', 'src'])
+        call(['git', 'clone', 'https://github.com/guillermooo/sublime-troubleshooting', 'src'])
 
     rm_folder_link(os.path.join(SCRIPT_DIR, 'src'))
     link_folder(os.path.join(SCRIPT_DIR, 'src'), os.path.join(SCRIPT_DIR, '..', 'src'))
